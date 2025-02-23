@@ -237,44 +237,50 @@
         </p>
       </td>
     </tr>
-
-
-  <!-- Poster -->
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <br>
-    <heading>Poster</heading>
-    <br>
-      <td style="padding:20px;width:30%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='malle_image'>
-            <br>
-            <img src='images/poster.png' width=220"></div>
-            <br>
-        </div>
-        <script type="text/javascript">
-          function malle_start() {
-            document.getElementById('malle_image').style.opacity = "1";
-          }
-          function malle_stop() {
-            document.getElementById('malle_image').style.opacity = "0";
-          }
-          malle_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:70%;vertical-align:middle">
-        <a href="pdf/Poster_xinxinzhang.pdf" target="_blank">
-          <papertitle>Image-Guided Uterine Fibroid Modelling, Surgery Planning, and Intervention</papertitle>
-        </a>
-        <br>
-        Hanxiao Zhang, Junhao Wang, Haojie Han, Taiyu Han, Yaoyu Liu, <strong>Xinxin Zhang</strong>
-        <br>
-        <a href=pdf/Poster_xinxinzhang.pdf target="_blank">PDF</a>
-        <br>
-        <!-- <em>Selected as the Outstanding Thesis of the National Physics Forum 2018</em> -->
-        <p>
-          This project integrates deep learning for 3D reconstruction and segmentation with optimized surgical path planning to improve fibroid localization during laparoscopic myomectomy, enhancing precision and patient outcomes in minimally invasive gynaecological surgery. 
-      </td>
   </tbody></table>
+
+
+    <!-- Poster -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <br>
+      <heading>Poster</heading>
+      <br>
+  
+      <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+        <td style="padding:20px;width:30%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='malle_image'>
+              <img src='images/poster.png' width="220"></div>
+            <img src='images/poster.png' width="220">
+          </div>
+          <script type="text/javascript">
+            function malle_start() {
+              document.getElementById('malle_image').style.opacity = "1";
+            }
+            function malle_stop() {
+              document.getElementById('malle_image').style.opacity = "0";
+            }
+            malle_stop()
+      </script>
+        </td>
+  
+        <td style="padding:20px;width:70%;vertical-align:middle">
+          <a href="pdf/Poster_xinxinzhang.pdf" target="_blank">
+            <papertitle>Image-Guided Uterine Fibroid Modelling, Surgery Planning, and Intervention
+            </papertitle>
+          </a>
+          <br>
+         Hanxiao Zhang, Junhao Wang, Haojie Han, Taiyu Han, Yaoyu Liu, <strong>Xinxin Zhang</strong>
+          <br>
+          <a href="pdf/Poster_xinxinzhang.pdf">PDF</a>
+          <br>
+          <p>
+          This project integrates deep learning for 3D reconstruction and segmentation with optimized surgical path planning to improve fibroid localization during laparoscopic myomectomy, enhancing precision and patient outcomes in minimally invasive gynaecological surgery. 
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+
  
     <!-- Education -->
     <table width="100%" align="center" border="0" cellpadding="10"><tbody>
