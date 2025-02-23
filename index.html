@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- head -->
+<head>
+  <script>
+    (function () {
+        var a_idx = 0;
+        window.onclick = function (event) {
+            var a = new Array("✨", "🤖", "🥳", "👋", "🦾", "🐽");
+
+            var heart = document.createElement("b");
+            heart.onselectstart = new Function('event.returnValue=false');
+
+            document.body.appendChild(heart).innerHTML = a[a_idx];
+            a_idx = (a_idx + 1) % a.length;
+            heart.style.cssText = "position: fixed;left:-100%;";
+
+            var f = 16, 
+                x = event.clientX - f / 2, 
+                y = event.clientY - f,
+                c = randomColor(), 
+                a = 1,
+                s = 1.2; 
+
+            var timer = setInterval(function () { 
+                if (a <= 0) {
+                    document.body.removeChild(heart);
+                    clearInterval(timer);
+                } else {
+                    heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+                        c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+                        s + ");";
+
+                    y--;
+                    a -= 0.016;
+                    s += 0.002;
+                }
+            }, 15)
+
+        }
+        function randomColor() {
+
+            return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+            .random() * 255)) + ")";
+
+        }
+    }());
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-66DNLPJ6PY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-66DNLPJ6PY');
+  </script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Xinxin Zhang</title>
+  
+  <meta name="author" content="Xinxin Zhang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" type="image/png" href="images/icon.png">
+</head>
+
+<!-- bib hide -->
+<script type="text/javascript">
+  function hideshow(which){
+  if (!document.getElementById)
+  return
+  if (which.style.display=="block")
+  which.style.display="none"
+  else
+  which.style.display="block"
+  }
+</script>
+
+<!-- body -->
+<body>
+  <!-- self-intro -->
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2%;width:55%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Xinxin Zhang</name>
+              </p>
+              <p style="text-align: justify">
+              <intro>
+                I am a second-year biomedical engineering undergraduate at <a href="https://www.kcl.ac.uk/">King's College London (KCL)</a>. 
+                <br>
+                <br>
+                My research experience includes contributing to the AI4Science projects at the <a href="https://www.bipt.edu.cn/publish/en/">Beijing Institute of Petrochemical Technology (BIPT)</a> under Prof. Qianjin Guo, and engaging in medical robotics research at <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a> with Dr. Hanxiao Zhang. 
+                <br>
+                <br>
+                Prior to this, I also developed wet lab skills in Prof. Lei Liu's biochemistry group at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua Univeristy (THU)</a> and participated in genetics studies in Prof. Liming Wang's lab at <a href="https://www.zju.edu.cn/english/">Zhejiang University (ZJU)</a>.
+                <br>
+                <br>
+                My primary research interests involve <b>assistive robotics</b> and <b>brain-computer interfaces</b>, where I am dedicated to develop intelligent, user-centric technologies that empower individuals with physical impairments. By integrating robotics with <b>neural systems and embodied AI</b>, I aim to enhance mobility, autonomy, and overall quality of life for patients. 
+
+                </intro>
+              <p style="text-align:center">
+                <a href="mailto:sarahzhangxx@gmail.com" target="_blank">Email</a> &nbsp/&nbsp
+                <!-- <a href="https://scholar.google.com/citations?user=Inr-6rEAAAAJ" target="_blank">Google Scholar</a> &nbsp/&nbsp -->
+                <a href="https://github.com/SarahZhangXX/" target="_blank">Github</a>&nbsp/&nbsp
+                <a href="www.linkedin.com/in/sarah-xinxin-zhang" target="_blank">LinkedIn</a>&nbsp
+              </p>
+            </td>
+            <td style="padding:0%; width:26%; max-width:26%;"> <!-- move the photo a bit left -->
+              <br>
+              <!-- <br> -->
+              <img style="padding:1%; width:100%; max-width:80%;  display: block; margin-left: auto; margin-right: auto; " alt="profile photo" src="images/xinxinzhang.png" class="hoverZoomLink">
+              <!-- <a href="https://hits.seeyoufarm.com" target="_blank">
+                <img 
+                  src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgeng-haoran.github.io&count_bg=%23FF8400&title_bg=%23545353&icon=tableau.svg&icon_color=%23F3F209&title=hits&edge_flat=false" 
+                  style="display: block; margin-left: auto; margin-right: auto; width: 55%;"/>
+              </a> -->
+            </td>
+  
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    </tr>
+  </tbody></table>
+
+  <!-- News -->
+  <!-- <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <heading>News</heading>
+    <br>
+    <td style="padding:0px;width:100%;vertical-align:middle">
+    <p>
+      <li>[2024/09] 🎉 Three papers get accepted by CoRL 2024, of which RAM is selected as <b><font color='red'>Oral Presentation</font></b> .</li>
+      <li>[2024/07] SAGE🌿 won the <b><font color='red'>Best Paper Award</font></b> at RSS 2024 SemRob Workshop</li>
+      <li>[2024/06] I won the <b><font color='red'>Yunfan Award</font></b> and was named as Rising Star at the <a href="https://www.worldaic.com.cn/" target="_blank">World Artificial Intelligence Conference</a> (top 15 early career Chinese AI researchers)! I am the only undergraduate student to win this award so far. </li>
+      <li>[2024/05] 🎉 SAGE gets accepted to RSS 2024.</li>
+      <li>[2024/03] I am honored to receive the <b><font color='red'>Berkeley Fellowship Award</font></b> and <b><font color='red'>Stanford Graduate Fellowship Award</font></b>.</li>
+      <li>[2023/12] Excited to announce <a href="https://simulately.wiki/" target="_blank">Simulately</a>🤖, a go-to toolkit for robotics researchers navigating diverse simulators!</li>
+      <li>[2023/12] I'm honored to be selected as one of the <b><font color='red'>Person of the Year of Peking University</font></b>.</li>
+      <li>[2023/10] I gave an Oral Presentation on UniDexGrasp++ at ICCV 2023.</li>
+      <li>[2023/10] 🎉 UniDexGrasp++ is selected as <b><font color='red'>Best Paper Finalist</font></b> at ICCV 2023.</li>
+      <li>[2023/07] 🎉 Two papers get accepted to ICCV 2023 with UniDexGrasp++ receiving final reviews of <b><font color='red'>all strong accepts (the highest ratings)</font></b>.</li>
+      <li>[2023/07] 🎉 One paper gets accepted to Machine Learning Journal.</li>
+      <li>[2023/03] 🎉 GAPartNet is selected as a <b><font color='red'>Highlight</font></b> at CVPR 2023 (Top 10% of accepted papers, top 2.5% of submissions).</li>
+      <li>[2023/02] 🎉 Three papers get accepted to CVPR 2023 with GAPartNet receiving final reviews of <b><font color='red'>all accepts (the highest ratings)</font></b>.</li>
+      <li>[2023/01] 🎉 One paper gets accepted to ICRA 2023.</li>
+    </p> 
+  </td>
+  </tr>
+  </tbody></table> -->
+
+  <!-- Publication -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <br>
+    <heading>Publication</heading>
+    <br>
+
+    <!-- SpatialFusion -->
+    
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/poster.png' width="220"></div>
+          <!-- <br> -->
+          <img src='images/poster.png' width="220">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="" target="_blank">
+          <papertitle>SpatialFusion: A Unified Model for Integrating spatial transcriptomics to Unveil Cell-Type Distribution, Interaction, and Functional Heterogeneity in Tissue Microenvironments
+          </papertitle>
+        </a>
+        <br>
+        Mengqiu Wang, Zhiwei Zhang, <strong>Xinxin Zhang</strong>, Ruoyan Dai, Zhenghui Wang, Zeyao Chen, Lixin Lei, Zhenxing Li, Xudong Zhao, Qianjin Guo*
+        <br>
+        <!-- <a href="https://arxiv.org/abs/2407.04689">Paper</a> /
+        <a href="https://yxkryptonite.github.io/RAM/">Project</a> / 
+        <a href="https://github.com/yxKryptonite/RAM_code">Code</a> /
+        <a href="javascript:hideshow(document.getElementById('ram'))">Bibtex</a>
+        <br> -->
+        <em><strong>Medical Image Analysis, 2024, <b>Under Review</b></strong></em>
+        <p> SpatialFusion integrates gene expression, spatial coordinates, and functional data using graph neural networks and attention mechanisms to improve spatial domain identification and cell type deconvolution, demonstrating superior accuracy and robustness in multiple datasets.
+        </p>
+      </td>
+    </tr>
+
+    <!-- SpaOmicsVAE -->
+
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/poster.png' width="220"></div>
+          <!-- <br> -->
+          <img src='images/poster.png' width="220">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="" target="_blank">
+          <papertitle>SpaOmicsVAE: A Deep Learning Framework for Integrative Analysis of Spatial Multi-omics Data
+          </papertitle>
+        </a>
+        <br>
+        Zhiwei Zhang, Mengqiu Wang, <strong>Xinxin Zhang</strong>, Ruoyan Dai, Zhenghui Wang, Lixin Lei, Kaitai Han, Zijun Wang, Chaojing Shi, Qianjin Guo*
+        <br>
+        <!-- <a href="https://arxiv.org/abs/2407.04689">Paper</a> /
+        <a href="https://yxkryptonite.github.io/RAM/">Project</a> / 
+        <a href="https://github.com/yxKryptonite/RAM_code">Code</a> /
+        <a href="javascript:hideshow(document.getElementById('ram'))">Bibtex</a>
+        <br> -->
+        <em><strong>Computer Methods and Programs in Biomedicine, 2025, <b>Under Review</b></strong></em>
+        <p> SpaOmicsVAE leverages a variational autoencoder with dual graph neural networks to integrate spatial multi-omics data, effectively handling sparsity and noise while revealing novel spatial patterns in tissue organization and immune cell dynamics.
+        </p>
+      </td>
+    </tr>
+
+
+  <!-- Poster -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <br>
+    <heading>Poster</heading>
+    <br>
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <br>
+            <img src='images/poster.png' width=220"></div>
+            <br>
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="pdf/Poster_xinxinzhang.pdf" target="_blank">
+          <papertitle>Image-Guided Uterine Fibroid Modelling, Surgery Planning, and Intervention</papertitle>
+        </a>
+        <br>
+        Hanxiao Zhang, Junhao Wang, Haojie Han, Taiyu Han, Yaoyu Liu, <strong>Xinxin Zhang</strong>
+        <br>
+        <a href=pdf/Poster_xinxinzhang.pdf target="_blank">PDF</a>
+        <br>
+        <!-- <em>Selected as the Outstanding Thesis of the National Physics Forum 2018</em> -->
+        <p>
+          This project integrates deep learning for 3D reconstruction and segmentation with optimized surgical path planning to improve fibroid localization during laparoscopic myomectomy, enhancing precision and patient outcomes in minimally invasive gynaecological surgery. 
+      </td>
+  </tbody></table>
+ 
+    <!-- Education -->
+    <table width="100%" align="center" border="0" cellpadding="10"><tbody>
+      <br>
+          <heading>Education</heading>
+      <br>
+      <tr>
+        <td style="padding-left:18px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/KCL_logo.png", width="108"></td>
+        <td width="100%" valign="center">
+          <strong><a href="https://www.kcl.ac.uk/" target="_blank"><papertitle>King's College London (KCL), London, UK</papertitle> </a></strong>
+          <br>2022 - Present
+          <br>Biomedical Engineering
+          <!-- <br> Advisor: Prof. <a href="https://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a> -->
+        </td>
+      </tr>
+    </tbody></table>
+
+  <!-- Experience -->
+  <table width="100%" align="center" border="0" cellpadding="10"><tbody>
+      <br>
+          <heading>Experience</heading>
+      <br>
+      <tr>
+        <td style="padding-left:18px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/BIPT_logo.png", width="108"></td>
+        <td width="100%" valign="center">
+          <strong><a href="https://www.bipt.edu.cn/publish/en/" target="_blank"><papertitle>Beijing Institute of Petrochemical Technology (BIPT)</papertitle> </a></strong>
+          <br>2024.8 - Present
+          <br>Research Assistant
+          <br> Advisor: <b>Prof. Qianjin Guo</b> 
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding-left:18px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/SJTU_logo.png", width="108"></td>
+        <td width="100%" valign="center">
+          <strong><a href="https://en.sjtu.edu.cn/" target="_blank"><papertitle>Shanghai Jiao Tong University (SJTU)</papertitle> </a></strong>
+          <br>2024.8 - Present
+          <br>Research Assistant
+          <br> Advisor: <b>Dr. Hanxiao Zhang</b> 
+        </td>
+      </tr> 
+
+      <tr>
+        <td style="padding-left:18px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/THU_logo.png", width="108"></td>
+        <td width="100%" valign="center">
+          <strong><a href="https://www.tsinghua.edu.cn/en/" target="_blank"><papertitle>Tsinghua Univeristy (THU)</papertitle> </a></strong>
+          <br>2024.8 - Present
+          <br>Research Assistant
+          <br> Advisor: <b>Prof. Lei Liu</b> 
+        </td>
+      </tr> 
+
+      <tr>
+        <td style="padding-left:18px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/ZJU_logo.png", width="108"></td>
+        <td width="100%" valign="center">
+          <strong><a href="https://www.zju.edu.cn/english/" target="_blank"><papertitle>Zhejiang University (ZJU)</papertitle> </a></strong>
+          <br>2024.8 - Present
+          <br>Research Assistant
+          <br> Advisor: <b>Prof. Liming Wang</b> 
+        </td>
+      </tr> 
+
+  </tbody></table>
+
+
+  <!-- Aknowledgements -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr>
+      <!-- <br> -->
+      <!-- <br> -->
+      <hr>
+        <p style="text-align:center">
+          This homepage is designed based on <a href="https://jonbarron.info/">Jon Barron</a>'s website and deployed on <a href="https://pages.github.com/">Github Pages</a>. Last updated: Feb. 23, 2025
+
+          <br>
+          © 2025 Xinxin Zhang
+        </p>
+      </td>
+      </tr>
+  </tbody></table>
+
+</body>
+</html>
